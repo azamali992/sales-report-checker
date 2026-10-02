@@ -1,0 +1,313 @@
+{
+  "evaluation_date": "2026-10-03",
+  "source_sha256": "f5385cbb54bbebf7196389109c6b0621faab0c304e3702548165e71c84aede8b",
+  "rows": 541909,
+  "currency": "GBP",
+  "amount_contract": "quantity \u00d7 original unit price, each line rounded HALF_UP to nearest penny; sum integer pence",
+  "diagnostics_overlap": {
+    "negative_quantity": 10624,
+    "nonpositive_price": 2517,
+    "negative_price": 2,
+    "missing_description": 1454,
+    "missing_customer": 135080,
+    "c_prefix": 9288,
+    "subpenny_unit_price": 4
+  },
+  "lines_requiring_penny_rounding": 4,
+  "policies": {
+    "positive_quantity_baseline": {
+      "rows": 541909,
+      "raw_pence": 974774793,
+      "included_pence": 1066668454,
+      "included_rows": 530104,
+      "excluded_pence": -91893661,
+      "groups": {
+        "included": {
+          "rows": 530104,
+          "pence": 1066668454
+        },
+        "c_prefix_negative": {
+          "rows": 9288,
+          "pence": -89681249
+        },
+        "zero_price": {
+          "rows": 2515,
+          "pence": 0
+        },
+        "negative_price": {
+          "rows": 2,
+          "pence": -2212412
+        }
+      },
+      "policy": "positive",
+      "exclude_description": false,
+      "exclude_customer": false,
+      "identity_verified": true,
+      "sqlite_reference_pence": 1066668454
+    },
+    "signed_positive_price": {
+      "rows": 541909,
+      "raw_pence": 974774793,
+      "included_pence": 976987205,
+      "included_rows": 539392,
+      "excluded_pence": -2212412,
+      "groups": {
+        "included": {
+          "rows": 539392,
+          "pence": 976987205
+        },
+        "zero_price": {
+          "rows": 2515,
+          "pence": 0
+        },
+        "negative_price": {
+          "rows": 2,
+          "pence": -2212412
+        }
+      },
+      "policy": "signed",
+      "exclude_description": false,
+      "exclude_customer": false,
+      "identity_verified": true,
+      "sqlite_reference_pence": 976987205
+    },
+    "signed_require_descriptions": {
+      "rows": 541909,
+      "raw_pence": 974774793,
+      "included_pence": 976987205,
+      "included_rows": 539392,
+      "excluded_pence": -2212412,
+      "groups": {
+        "included": {
+          "rows": 539392,
+          "pence": 976987205
+        },
+        "zero_price": {
+          "rows": 2515,
+          "pence": 0
+        },
+        "negative_price": {
+          "rows": 2,
+          "pence": -2212412
+        }
+      },
+      "policy": "signed",
+      "exclude_description": true,
+      "exclude_customer": false,
+      "identity_verified": true,
+      "sqlite_reference_pence": 976987205
+    },
+    "signed_known_customers": {
+      "rows": 541909,
+      "raw_pence": 974774793,
+      "included_pence": 830006581,
+      "included_rows": 406789,
+      "excluded_pence": 144768212,
+      "groups": {
+        "included": {
+          "rows": 406789,
+          "pence": 830006581
+        },
+        "zero_price": {
+          "rows": 2515,
+          "pence": 0
+        },
+        "missing_customer": {
+          "rows": 132603,
+          "pence": 146980624
+        },
+        "negative_price": {
+          "rows": 2,
+          "pence": -2212412
+        }
+      },
+      "policy": "signed",
+      "exclude_description": false,
+      "exclude_customer": true,
+      "identity_verified": true,
+      "sqlite_reference_pence": 830006581
+    },
+    "positive_require_both": {
+      "rows": 541909,
+      "raw_pence": 974774793,
+      "included_pence": 891140790,
+      "included_rows": 397884,
+      "excluded_pence": 83634003,
+      "groups": {
+        "included": {
+          "rows": 397884,
+          "pence": 891140790
+        },
+        "c_prefix_negative": {
+          "rows": 8905,
+          "pence": -61134209
+        },
+        "zero_price": {
+          "rows": 2515,
+          "pence": 0
+        },
+        "missing_customer": {
+          "rows": 132603,
+          "pence": 146980624
+        },
+        "negative_price": {
+          "rows": 2,
+          "pence": -2212412
+        }
+      },
+      "policy": "positive",
+      "exclude_description": true,
+      "exclude_customer": true,
+      "identity_verified": true,
+      "sqlite_reference_pence": 891140790
+    }
+  },
+  "sample_rows": 1004,
+  "sample_sha256": "d4ae2581560ded92d7312b486a65a4c782196b5eaff9bcd26fd57b03b4fd7173",
+  "sample_policies": {
+    "positive_quantity_baseline": {
+      "rows": 1004,
+      "raw_pence": -742443,
+      "included_pence": 1555528,
+      "included_rows": 960,
+      "excluded_pence": -2297971,
+      "groups": {
+        "included": {
+          "rows": 960,
+          "pence": 1555528
+        },
+        "c_prefix_negative": {
+          "rows": 27,
+          "pence": -85559
+        },
+        "zero_price": {
+          "rows": 15,
+          "pence": 0
+        },
+        "negative_price": {
+          "rows": 2,
+          "pence": -2212412
+        }
+      },
+      "policy": "positive",
+      "exclude_description": false,
+      "exclude_customer": false,
+      "identity_verified": true
+    },
+    "signed_positive_price": {
+      "rows": 1004,
+      "raw_pence": -742443,
+      "included_pence": 1469969,
+      "included_rows": 987,
+      "excluded_pence": -2212412,
+      "groups": {
+        "included": {
+          "rows": 987,
+          "pence": 1469969
+        },
+        "zero_price": {
+          "rows": 15,
+          "pence": 0
+        },
+        "negative_price": {
+          "rows": 2,
+          "pence": -2212412
+        }
+      },
+      "policy": "signed",
+      "exclude_description": false,
+      "exclude_customer": false,
+      "identity_verified": true
+    },
+    "signed_require_descriptions": {
+      "rows": 1004,
+      "raw_pence": -742443,
+      "included_pence": 1469969,
+      "included_rows": 987,
+      "excluded_pence": -2212412,
+      "groups": {
+        "included": {
+          "rows": 987,
+          "pence": 1469969
+        },
+        "zero_price": {
+          "rows": 15,
+          "pence": 0
+        },
+        "negative_price": {
+          "rows": 2,
+          "pence": -2212412
+        }
+      },
+      "policy": "signed",
+      "exclude_description": true,
+      "exclude_customer": false,
+      "identity_verified": true
+    },
+    "signed_known_customers": {
+      "rows": 1004,
+      "raw_pence": -742443,
+      "included_pence": 1271926,
+      "included_rows": 747,
+      "excluded_pence": -2014369,
+      "groups": {
+        "included": {
+          "rows": 747,
+          "pence": 1271926
+        },
+        "zero_price": {
+          "rows": 15,
+          "pence": 0
+        },
+        "missing_customer": {
+          "rows": 240,
+          "pence": 198043
+        },
+        "negative_price": {
+          "rows": 2,
+          "pence": -2212412
+        }
+      },
+      "policy": "signed",
+      "exclude_description": false,
+      "exclude_customer": true,
+      "identity_verified": true
+    },
+    "positive_require_both": {
+      "rows": 1004,
+      "raw_pence": -742443,
+      "included_pence": 1342140,
+      "included_rows": 722,
+      "excluded_pence": -2084583,
+      "groups": {
+        "included": {
+          "rows": 722,
+          "pence": 1342140
+        },
+        "c_prefix_negative": {
+          "rows": 25,
+          "pence": -70214
+        },
+        "zero_price": {
+          "rows": 15,
+          "pence": 0
+        },
+        "missing_customer": {
+          "rows": 240,
+          "pence": 198043
+        },
+        "negative_price": {
+          "rows": 2,
+          "pence": -2212412
+        }
+      },
+      "policy": "positive",
+      "exclude_description": true,
+      "exclude_customer": true,
+      "identity_verified": true
+    }
+  },
+  "independent_reference": "Decimal from original workbook cells -> SQLite integer SUM with independent SQL predicates",
+  "elapsed_seconds": 100.612,
+  "claims": "Descriptive policy contributions and traceability, not accounting accuracy, matched returns, recovered revenue or measured time savings."
+}

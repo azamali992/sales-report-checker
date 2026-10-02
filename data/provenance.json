@@ -1,0 +1,13 @@
+{
+  "dataset": "UCI Online Retail",
+  "doi": "10.24432/C5BW33",
+  "source_url": "https://archive.ics.uci.edu/static/public/352/online+retail.zip",
+  "dataset_page": "https://archive.ics.uci.edu/dataset/352/online+retail",
+  "licence": "CC BY 4.0",
+  "licence_url": "https://creativecommons.org/licenses/by/4.0/",
+  "retrieved_date": "2026-10-02",
+  "verified_utc": "2026-10-02T20:17:48.325377+00:00",
+  "acquisition_mode": "verified copy of previously fetched official artifact",
+  "sha256": "f5385cbb54bbebf7196389109c6b0621faab0c304e3702548165e71c84aede8b",
+  "bytes": 23715478
+}
