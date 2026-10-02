@@ -17,7 +17,7 @@ The browser calculates selected inputs using decimal-string/BigInt line arithmet
 
 ## Demo
 
-**Public deployment pending.** A local demo and unattended browser checks are complete. A public URL will be added after publication and a cold check; a local address is not a live public demo.
+**[Open the live demo](https://azamali992.github.io/sales-report-checker/).** Published on free GitHub Pages and checked from a fresh headless browser on 3 October 2026: 16 browser/Python policy comparisons, a real negative-price case, a 257-row exception export and reset all passed, with zero browser errors. This is a fixed public-data engineering demonstration.
 
 ## 60-second local run
 
